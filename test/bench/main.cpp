@@ -88,7 +88,7 @@ void testHashesSpeed()
                     hash->update(buf, size);
                 hash->final(digest);
                 auto current = chrono::system_clock::now();
-                long long elapsed = chrono::duration_cast<chrono::nanoseconds>(current - start).count();
+                long long elapsed = chrono::duration_cast<chrono::microseconds>(current - start).count();
                 if (elapsed < minElapsed)minElapsed = elapsed;
             }
             printf("%s elapsed=%lld us\n", hash->getAlgorithm().c_str(), minElapsed);
@@ -124,7 +124,7 @@ void testCiphersSpeed()
                 chrono::time_point<chrono::system_clock> start = chrono::system_clock::now();
                 ((DCP_blockcipher*)cipher)->encryptCBC(bufIn, bufOut, size);
                 auto current = chrono::system_clock::now();
-                long long elapsed = chrono::duration_cast<chrono::nanoseconds>(current - start).count();
+                long long elapsed = chrono::duration_cast<chrono::microseconds>(current - start).count();
                 if (elapsed < minElapsed)minElapsed = elapsed;
             }
             printf("%s : %lld us\n", cipher->getAlgorithm().c_str(), minElapsed);
@@ -229,9 +229,9 @@ void ArgonBenchmark() {
 
 int main(int argc, char * argv[])
 {
-    //testHashesSpeed();
+    testHashesSpeed();
     //testCiphersSpeed();
     //selfTest()
-    ArgonBenchmark();
+    //ArgonBenchmark();
     return 0;
 }
