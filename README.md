@@ -45,20 +45,20 @@ testSpeed give with Visual Studio, Intel i3 3 GHz
 
 Time of 100000 bytes
 - ....
-md4 elapsed=127 us
-md5 elapsed=189 us
-ripemd-128 elapsed=242 us
-ripemd-160 elapsed=367 us
-sha1-160 elapsed=245 us
-sha2-256 elapsed=476 us
-sha3-224 elapsed=352 us
-sha3-256 elapsed=375 us
-sha3-384 elapsed=490 us
-sha3-512 elapsed=705 us
+- md4 elapsed=127 us
+- md5 elapsed=189 us
+- ripemd-128 elapsed=242 us
+- ripemd-160 elapsed=367 us
+- sha1-160 elapsed=245 us
+- sha2-256 elapsed=476 us
+- sha3-224 elapsed=352 us
+- sha3-256 elapsed=375 us
+- sha3-384 elapsed=490 us
+- sha3-512 elapsed=705 us
 
 Time of 100000 bytes
-blowfish : 833 us
-rijndael : 389 us
-serpent : 1143 us
-twofish : 617 us
+- blowfish : 833 us
+- rijndael : 389 us
+- serpent : 1143 us
+- twofish : 617 us
 
