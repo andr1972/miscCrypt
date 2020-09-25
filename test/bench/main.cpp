@@ -11,7 +11,7 @@
 #include "DCPc_serpent.h"
 #include "DCPc_blowfish.h"
 #include "DCPc_twofish.h"
-#include "../Argon2/argon2.h"
+#include "../../Argon2/argon2.h"
 #include <chrono>
 #include <vector>
 #include <climits>
@@ -232,6 +232,6 @@ int main(int argc, char * argv[])
     //testHashesSpeed();
     //testCiphersSpeed();
     //selfTest()
-    //ArgonBenchmark();
+    ArgonBenchmark();
     return 0;
 }
